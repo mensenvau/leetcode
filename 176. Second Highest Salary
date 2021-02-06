@@ -1,0 +1,12 @@
+# Write your MySQL query statement below
+# Employee  jadvalidagi Salary  ustuning eng katta ikkinchi qiyamtni chiqaring . 
+# ikkita kelgan qiymatlarni bir qilamiz  
+ 
+SELECT (SELECT  distinct Salary  FROM Employee 
+ORDER BY Salary desc 
+LIMIT 1,1 ) AS SecondHighestSalary  
+
+  # 0 1 2 3 4 5
+  #ikkinchisi 1 dan bo'lgani uchun limit da 1,1 dona qiymat olamiz 
+  # SecondHighestSalary  nomlash kerag bo'ladi .  
+  
