@@ -1,0 +1,6 @@
+## Harbir Person uchun Address mavjud bo'lsa Adress yoki NULL olib keting . 
+## FirstName, LastName, City, State maydonlarni qaytaring . 
+
+SELECT FirstName, LastName, City, State FRom Person  
+LEFT JOIN Address 
+ON Address.PersonID = Person.PersonId
