@@ -1,0 +1,16 @@
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  SET N=N-1 ;
+  RETURN (
+ 
+      SELECT DISTINCT Salary  FROM Employee  
+      ORDER BY Salary  DESC 
+      LIMIT N,1 
+  );
+END
+       # 0 dan boshlangani uchun N-1 qilamiz 
+      # Write your MySQL query statement below.
+      # funkction mysql yozamiz 
+      # n chi o'rindagi Employee satrini qaytaring 
+      # order langan va takrorlanganlar olib tashlangan holda 
+      # N chi o'rindan 1 ta ol LIMIT N,1  
