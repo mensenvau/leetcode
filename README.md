@@ -1,1 +1,1 @@
-![Leetcode.com mensenvau ](https://leetcode.com/mensenvau/)
+[Leetcode.com mensenvau ](https://leetcode.com/mensenvau/)
